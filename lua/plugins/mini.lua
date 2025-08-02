@@ -9,6 +9,13 @@ return {
       require("mini.statusline").setup()
       require("mini.notify").setup()
       require("mini.bufremove").setup()
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = "java",
+        callback = function()
+          -- This variable is checked by mini.notify before showing anything
+          vim.b.mininotify_disable = true
+        end,
+      })
     end
   },
 }

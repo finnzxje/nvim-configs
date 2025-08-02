@@ -1,9 +1,11 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
+-- lsp 
+vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, vim.tbl_deep_extend("force", opts, { desc = "LSP Goto Definition" }))
 
+-- miscs 
 map("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
 map("i", "<C-h>", "<Left>", { desc = "move left" })
