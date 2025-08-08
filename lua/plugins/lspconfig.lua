@@ -7,7 +7,7 @@ return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
-        -- "lua_ls",
+        "lua_ls",
         "html",
         "cssls",
         "emmet_language_server",
