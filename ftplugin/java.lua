@@ -64,6 +64,10 @@ local config = {
   init_options = {
     bundles = {},
   },
+
+  on_attach = function(client, bufnr)
+    vim.diagnostic.disable(bufnr)
+  end,
 }
 require('jdtls').start_or_attach(config)
 

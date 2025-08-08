@@ -9,6 +9,7 @@ return
     "saghen/blink.cmp",
   },
   opts = {
+    legacy_commands = false,
     workspaces = {
       {
         name = "personal",
