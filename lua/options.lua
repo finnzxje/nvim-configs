@@ -28,7 +28,7 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 999
 
-vim.opt_local.conceallevel = 1
+vim.opt_local.conceallevel = 2
 
 vim.o.undofile = true
 
