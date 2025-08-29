@@ -7,6 +7,7 @@ return
   dependencies = {
     "nvim-lua/plenary.nvim",
     "saghen/blink.cmp",
+    "MeanderingProgrammer/render-markdown.nvim"
   },
   opts = {
     legacy_commands = false,
@@ -21,7 +22,7 @@ return
     disable_frontmatter = true,
 
     picker = {
-      name = "telescope.nvim",
+      name = "snacks.pick",
     },
 
     templates = {
@@ -40,10 +41,6 @@ return
       ignore_conceal_warn = false,
       update_debounce = 200,
       max_file_length = 5000,
-      -- checkboxes = {
-      --   [" "] = { char = "☐", hl_group = "ObsidianTodo" },
-      --   ["x"] = { char = "✔", hl_group = "ObsidianDone" },
-      -- },
       -- Use bullet marks for non-checkbox lists.
       bullets = { char = "•", hl_group = "ObsidianBullet" },
       external_link_icon = { char = "", hl_group = "ObsidianExtLinkIcon" },
@@ -67,6 +64,10 @@ return
         ObsidianBlockID = { italic = true, fg = "#89ddff" },
         ObsidianHighlightText = { bg = "#75662e" },
       },
+    },
+    checkbox = {
+      -- order = { " ", "~", "!", ">", "x" },
+      order = { " ", "x" },
     },
   },
 }
