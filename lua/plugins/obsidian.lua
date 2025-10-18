@@ -19,7 +19,10 @@ return
     },
     note_subdir = "06-Notes",
     new_note_location = "note_subdir",
-    disable_frontmatter = true,
+    -- disable_frontmatter = true,
+    frontmatter = {
+      enabled = false
+    },
 
     picker = {
       name = "snacks.pick",
