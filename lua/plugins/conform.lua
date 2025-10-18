@@ -14,6 +14,7 @@ return {
       typescript = { "prettier" },
       typescriptreact = { "prettier", stop_after_first = true },
       yaml = { "yamlfmt" },
+      python = { "isort" },
     },
 
     format_on_save = function(bufnr)
